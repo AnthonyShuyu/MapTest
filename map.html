@@ -32,6 +32,7 @@
           center: nyc
         });
 
+/**
         var contentString = 
             '<h1 id="firstHeading" class="firstHeading">NYC</h1>'+
             '<div id="bodyContent">'+
@@ -72,8 +73,19 @@
         marker.addListener('click', function() {
           infowindow.open(map, marker);
         });
-
+*/
         //Boston HQ
+
+        var contentString_Boston = 
+            '<h1 id="firstHeading" class="firstHeading">Boston</h1>'+
+            '<div id="bodyContent">'+
+            '<p>GDA HQ and main office</p>'+ '<p> Has accounting/finance, human resources, legal, corporate IT, facilities management, executive management and strategy groups.</p>' + '<p>Total number of employees across all <b>HQ offices</b>(Boston, Paris, Buenos Aires, Sydney) is about <b>600</b></p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_Boston = new google.maps.InfoWindow({
+          content: contentString_Boston
+        });
 
         var marker_Boston = new google.maps.Marker({
           position: {lat: 42.3601, lng: -71.0589},
@@ -81,10 +93,399 @@
           title: "Boston"
         });
 
-        var infowindow = new google.maps.InfoWindow({
-          content: contentString
+        marker_Boston.addListener('click', function() {
+          infowindow_Boston.open(map, marker_Boston);
         });
 
+
+        // Paris HQ
+        var contentString_Paris = 
+            '<h1 id="firstHeading" class="firstHeading">Paris</h1>'+
+            '<div id="bodyContent">'+
+            '<p>GDA reginal HQ</p>'+ '<p> Has accounting/finance, human resources, legal, corporate IT, facilities management, executive management and strategy groups.</p>' + '<p>Total number of employees across all <b>HQ offices</b>(Boston, Paris, Buenos Aires, Sydney) is about <b>600</b></p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_Paris = new google.maps.InfoWindow({
+          content: contentString_Paris
+        });
+
+        var marker_Paris = new google.maps.Marker({
+          position: {lat: 48.8566, lng: -2.3522},
+          map: map,
+          title: "Paris"
+        });
+
+        marker_Paris.addListener('click', function() {
+          infowindow_Paris.open(map, marker_Paris);
+        });
+
+        // Buenos Aires HQ
+        var contentString_Buenos_Aires = 
+            '<h1 id="firstHeading" class="firstHeading">Buenos Aires</h1>'+
+            '<div id="bodyContent">'+
+            '<p>GDA reginal HQ</p>'+ '<p> Has accounting/finance, human resources, legal, corporate IT, facilities management, executive management and strategy groups.</p>' + '<p>Total number of employees across all <b>HQ offices</b>(Boston, Paris, Buenos Aires, Sydney) is about <b>600</b></p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_Buenos_Aires = new google.maps.InfoWindow({
+          content: contentString_Buenos_Aires
+        });
+
+        var marker_Buenos_Aires = new google.maps.Marker({
+          position: {lat: -34.6037, lng: -58.3816},
+          map: map,
+          title: "Buenos Aires"
+        });
+
+        marker_Buenos_Aires.addListener('click', function() {
+          infowindow_Buenos_Aires.open(map, marker_Buenos_Aires);
+        });        
+
+
+
+        // Sydney HQ
+        var contentString_Sydney = 
+            '<h1 id="firstHeading" class="firstHeading">Sydney</h1>'+
+            '<div id="bodyContent">'+
+            '<p>GDA reginal HQ</p>'+ '<p> Has accounting/finance, human resources, legal, corporate IT, facilities management, executive management and strategy groups.</p>' + '<p>Total number of employees across all <b>HQ offices</b>(Boston, Paris, Buenos Aires, Sydney) is about <b>600</b></p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_Sydney = new google.maps.InfoWindow({
+          content: contentString_Sydney
+        });
+
+        var marker_Sydney = new google.maps.Marker({
+          position: {lat: -33.8688, lng: 151.2093},
+          map: map,
+          title: "Sydney"
+        });
+
+        marker_Sydney.addListener('click', function() {
+          infowindow_Sydney.open(map, marker_Sydney);
+        });
+
+
+        // Berlin Global client center
+         var contentString_Berlin= 
+            '<h1 id="firstHeading" class="firstHeading">Berlin</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Global client center</p>'+ '<p>(Berlin, Atlanta and Tokyo) employing approximately <b>500</b> high quality <b>designers, engineers and architects</b></p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_Berlin = new google.maps.InfoWindow({
+          content: contentString_Berlin
+        });
+
+        var marker_Berlin = new google.maps.Marker({
+          position: {lat: 52.5200, lng: 13.4050},
+          map: map,
+          title: "Berlin"
+        });
+
+        marker_Berlin.addListener('click', function() {
+          infowindow_Berlin.open(map, marker_Berlin);
+        });       
+
+        // Atlanta Global client center
+         var contentString_Atlanta= 
+            '<h1 id="firstHeading" class="firstHeading">Atlanta</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Global client center</p>'+ '<p>(Berlin, Atlanta and Tokyo) employing approximately <b>500</b> high quality <b>designers, engineers and architects</b></p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_Atlanta = new google.maps.InfoWindow({
+          content: contentString_Atlanta
+        });
+
+        var marker_Atlanta = new google.maps.Marker({
+          position: {lat: 33.7490, lng: -84.3880},
+          map: map,
+          title: "Atlanta"
+        });
+
+        marker_Atlanta.addListener('click', function() {
+          infowindow_Atlanta.open(map, marker_Atlanta);
+        });       
+
+        // Tokyo Global client center
+         var contentString_Tokyo= 
+            '<h1 id="firstHeading" class="firstHeading">Tokyo</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Global client center</p>'+ '<p>(Berlin, Atlanta and Tokyo) employing approximately <b>500</b> high quality <b>designers, engineers and architects</b></p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_Tokyo = new google.maps.InfoWindow({
+          content: contentString_Tokyo
+        });
+
+        var marker_Tokyo = new google.maps.Marker({
+          position: {lat: 35.6895, lng: 139.6917},
+          map: map,
+          title: "Tokyo"
+        });
+
+        marker_Tokyo.addListener('click', function() {
+          infowindow_Tokyo.open(map, marker_Tokyo);
+        });       
+
+
+        // Beijing support stuff department
+         var contentString_Beijing= 
+            '<h1 id="firstHeading" class="firstHeading">Beijing</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Additional, lower-level support staff department</p>'+ '<p>(China, Canada, United Arab Emirates and Malaysia) employing <b>3000</b> people</p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_Beijing = new google.maps.InfoWindow({
+          content: contentString_Beijing
+        });
+
+        var marker_Beijing = new google.maps.Marker({
+          position: {lat: 39.9042, lng: 116.4074},
+          map: map,
+          title: "Beijing"
+        });
+
+        marker_Beijing.addListener('click', function() {
+          infowindow_Beijing.open(map, marker_Beijing);
+        });  
+
+
+        // Ottawa support stuff department
+         var contentString_Ottawa= 
+            '<h1 id="firstHeading" class="firstHeading">Ottawa</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Additional, lower-level support staff department</p>'+ '<p>(China, Canada, United Arab Emirates and Malaysia) employing <b>3000</b> people</p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_Ottawa = new google.maps.InfoWindow({
+          content: contentString_Ottawa
+        });
+
+        var marker_Ottawa = new google.maps.Marker({
+          position: {lat: 45.4215, lng: -75.6972},
+          map: map,
+          title: "Ottawa"
+        });
+
+        marker_Ottawa.addListener('click', function() {
+          infowindow_Ottawa.open(map, marker_Ottawa);
+        });  
+
+
+        // United_Arab_Emirates support stuff department
+         var contentString_United_Arab_Emirates= 
+            '<h1 id="firstHeading" class="firstHeading">United Arab Emirates</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Additional, lower-level support staff department</p>'+ '<p>(China, Canada, United Arab Emirates and Malaysia) employing <b>3000</b> people</p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_United_Arab_Emirates = new google.maps.InfoWindow({
+          content: contentString_United_Arab_Emirates
+        });
+
+        var marker_United_Arab_Emirates = new google.maps.Marker({
+          position: {lat: 23.4241, lng: 53.8478},
+          map: map,
+          title: "United Arab Emirates"
+        });
+
+        marker_United_Arab_Emirates.addListener('click', function() {
+          infowindow_United_Arab_Emirates.open(map, marker_United_Arab_Emirates);
+        });  
+
+
+        // kuala_lumpur support stuff department
+         var contentString_kuala_lumpur= 
+            '<h1 id="firstHeading" class="firstHeading">Kuala Lumpur</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Additional, lower-level support staff department</p>'+ '<p>(China, Canada, United Arab Emirates and Malaysia) employing <b>3000</b> people</p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_kuala_lumpur = new google.maps.InfoWindow({
+          content: contentString_kuala_lumpur
+        });
+
+        var marker_kuala_lumpur = new google.maps.Marker({
+          position: {lat: 3.1390, lng: 101.6869},
+          map: map,
+          title: "kuala lumpur"
+        });
+
+        marker_kuala_lumpur.addListener('click', function() {
+          infowindow_kuala_lumpur.open(map, marker_kuala_lumpur);
+        });  
+
+
+
+        // Americas sales organization
+         var contentString_Americas = 
+            '<h1 id="firstHeading" class="firstHeading">Americas</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Sales organization</p>'+ '<p>Highly distributed; there are approximately <b>30</b> small and medium size offices in each of the major geographical areas (Americas, Europe/Middle East and Asia Pacific) to a total of <b>1000</b> employees</p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_Americas = new google.maps.InfoWindow({
+          content: contentString_Americas
+        });
+
+        var marker_Americas = new google.maps.Marker({
+          position: {lat: 37.0902, lng: -95.7129},
+          map: map,
+          title: "Americas"
+        });
+
+        marker_Americas.addListener('click', function() {
+          infowindow_Americas.open(map, marker_Americas);
+        });  
+
+        // Europe sales organization
+         var contentString_Europe = 
+            '<h1 id="firstHeading" class="firstHeading">Europe</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Sales organization</p>'+ '<p>Highly distributed; there are approximately <b>30</b> small and medium size offices in each of the major geographical areas (Americas, Europe/Middle East and Asia Pacific) to a total of <b>1000</b> employees</p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_Europe = new google.maps.InfoWindow({
+          content: contentString_Europe
+        });
+
+        var marker_Europe = new google.maps.Marker({
+          position: {lat: 54.5260, lng: 15.2551},
+          map: map,
+          title: "Europe"
+        });
+
+        marker_Europe.addListener('click', function() {
+          infowindow_Europe.open(map, marker_Europe);
+        });  
+
+
+        // Asia sales organization
+         var contentString_Asia = 
+            '<h1 id="firstHeading" class="firstHeading">Asia</h1>'+
+            '<div id="bodyContent">'+
+            '<p>Sales organization</p>'+ '<p>Highly distributed; there are approximately <b>30</b> small and medium size offices in each of the major geographical areas (Americas, Europe/Middle East and Asia Pacific) to a total of <b>1000</b> employees</p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_Asia = new google.maps.InfoWindow({
+          content: contentString_Asia
+        });
+
+        var marker_Asia = new google.maps.Marker({
+          position: {lat: 34.0479, lng: 100.6197},
+          map: map,
+          title: "Asia"
+        });
+
+        marker_Asia.addListener('click', function() {
+          infowindow_Asia.open(map, marker_Asia);
+        });  
+
+
+
+
+          // Warsaw software development center
+         var contentString_Warsaw = 
+            '<h1 id="firstHeading" class="firstHeading">Warsaw</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Software development center</b></p>'+ '<p>In (Poland, India and Ukraine) to a total of <b>300</b> employees working on multiple client-server and web-based software projects to support global operations, AutoCAD and other drawing packages, document management systems and many others.</p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_Warsaw = new google.maps.InfoWindow({
+          content: contentString_Warsaw
+        });
+
+        var marker_Warsaw = new google.maps.Marker({
+          position: {lat: 52.2297, lng: 21.0122},
+          map: map,
+          title: "Warsaw"
+        });
+
+        marker_Warsaw.addListener('click', function() {
+          infowindow_Warsaw.open(map, marker_Warsaw);
+        }); 
+
+
+          // New_Delhi software development center
+         var contentString_New_Delhi = 
+            '<h1 id="firstHeading" class="firstHeading">New_Delhi</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Software development center</b></p>'+ '<p>In (Poland, India and Ukraine) to a total of <b>300</b> employees working on multiple client-server and web-based software projects to support global operations, AutoCAD and other drawing packages, document management systems and many others.</p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_New_Delhi = new google.maps.InfoWindow({
+          content: contentString_New_Delhi
+        });
+
+        var marker_New_Delhi = new google.maps.Marker({
+          position: {lat: 28.6139, lng: 77.2090},
+          map: map,
+          title: "New_Delhi"
+        });
+
+        marker_New_Delhi.addListener('click', function() {
+          infowindow_New_Delhi.open(map, marker_New_Delhi);
+        }); 
+
+
+          // Kiev software development center
+         var contentString_Kiev = 
+            '<h1 id="firstHeading" class="firstHeading">Kiev</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Software development center</b></p>'+ '<p>In (Poland, India and Ukraine) to a total of <b>300</b> employees working on multiple client-server and web-based software projects to support global operations, AutoCAD and other drawing packages, document management systems and many others.</p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_Kiev = new google.maps.InfoWindow({
+          content: contentString_Kiev
+        });
+
+        var marker_Kiev = new google.maps.Marker({
+          position: {lat: 50.4501, lng: 30.5234},
+          map: map,
+          title: "Kiev"
+        });
+
+        marker_Kiev.addListener('click', function() {
+          infowindow_Kiev.open(map, marker_Kiev);
+        }); 
+
+         // Puerto_Rico call center
+         var contentString_Puerto_Rico = 
+            '<h1 id="firstHeading" class="firstHeading">Puerto Rico</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Call center</b></p>'+ '<p>There is also an active call-center in Puerto Rico, which supports customer inquiries and complains</p>'
+            '</div>'+
+            '</div>';
+
+        var infowindow_Puerto_Rico = new google.maps.InfoWindow({
+          content: contentString_Puerto_Rico
+        });
+
+        var marker_Puerto_Rico = new google.maps.Marker({
+          position: {lat: 18.2208, lng: -66.5901},
+          map: map,
+          title: "Puerto Rico"
+        });
+
+        marker_Puerto_Rico.addListener('click', function() {
+          infowindow_Puerto_Rico.open(map, marker_Puerto_Rico);
+        }); 
 
       }
     </script>
